@@ -341,11 +341,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2912790419148080983, guid: 696315e38c557fa4fae4d649c5520b33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 2912790419148080983, guid: 696315e38c557fa4fae4d649c5520b33, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -7.1
       objectReference: {fileID: 0}
     - target: {fileID: 2912790419148080983, guid: 696315e38c557fa4fae4d649c5520b33, type: 3}
       propertyPath: m_LocalPosition.z
@@ -541,6 +541,10 @@ PrefabInstance:
     - target: {fileID: 2912790419148118903, guid: 696315e38c557fa4fae4d649c5520b33, type: 3}
       propertyPath: m_Name
       value: Planet (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061192133285840553, guid: 696315e38c557fa4fae4d649c5520b33, type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
