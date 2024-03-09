@@ -8,6 +8,33 @@ public class Attractor : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
     private const float G = 6.674f; //Gravitational constant
+    
+    //create a list to store other planets to be attracted
+    public static List<Attractor> Attractors;
+
+    private void FixedUpdate()
+    {
+        //loop through all elements in the List
+        foreach (var attractor in Attractors)
+        {
+            //ไม่ดูดตัวเอง
+            if (attractor != this)
+            {
+                Attract(attractor);
+            }
+        }
+    }
+
+    private void OnEnable()
+    {
+        //initiallize the Attractors List
+        if (Attractors == null)
+        {
+            Attractors = new List<Attractor>();
+        }
+        
+        Attractors.Add(this);
+    }
 
     void Attract(Attractor other)
     {
